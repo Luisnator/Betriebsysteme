@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/GitHub/Betriebsysteme/main.c
+stdio.h
+-
+unistd.h
+-
+sys/wait.h
+-
+stdlib.h
+-
+
