@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Scheduling.dir/main.c.obj"
+  "CMakeFiles/Scheduling.dir/main.c.o"
   "Scheduling.pdb"
-  "Scheduling.exe"
-  "Scheduling.exe.manifest"
-  "Scheduling.lib"
+  "Scheduling"
 )
 
 # Per-language clean rules from dependency scanning.
