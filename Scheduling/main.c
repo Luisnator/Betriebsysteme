@@ -65,6 +65,10 @@ int main() {
     init();
     printf("\nRoundRobin: \n");
     roundRobin();
+    init();
+    printf("\nRoundRobin mit Priorität: \n");
+    roundRobinPrio();
+
     return 0;
 }
 void init(){
@@ -138,5 +142,55 @@ void roundRobin()
 }
 void roundRobinPrio()
 {
-
+    long count = List_count(&Processlist);
+    long count2 = count;
+    double mvz = 0;
+    int temp = 0;
+    int temp2 = 0;
+    int priocomplete = 0;
+    int tempprio = count;
+    while(tempprio != 0)
+    {
+        priocomplete+= tempprio;
+        tempprio--;
+    }
+    int rounds= 0;
+    while(!List_isEmpty(&Processlist))
+    {
+        bool fin = 0;
+        for(int i = 0; i< count2;i++)
+        {
+            process = List_getFirst(&Processlist);
+            if(process->seconds < process->prio)
+            {
+                process->seconds = 0;
+                printf("Es wurde %ds an %c gearbeitet \n",process->seconds,process->name);
+            }
+            else
+            {
+                process->seconds -= process->prio;
+                printf("Es wurde %ds an %c gearbeitet \n",process->prio,process->name);
+            }
+            if(process->seconds <= 0)
+            {
+                fin = 1;
+                printf("Prozess %c wurde beendet \n",process->name);
+            }
+            else
+            {
+                List_append(&Processlist,process);
+            }
+        }
+        rounds++;
+        if(fin == 1)
+        {
+            mvz += temp +priocomplete * rounds;
+            temp += + priocomplete * rounds;
+            priocomplete -= process->prio;
+            count2--;
+            rounds = 0;
+        }
+    }
+    mvz = mvz / count;
+    printf("Mittlere Verweilszeit: %fs \n",mvz *60);
 }
