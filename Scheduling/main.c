@@ -96,7 +96,7 @@ void firstComeFirstServe()
     for(int i = 0 ; i < count;i++)
     {
         process = List_getFirst(&Processlist);
-        mvz += ((double)process->seconds * (double)(count-i));
+        mvz += (process->seconds * (count-i));
         time += process->seconds;
         printf("%c wurde abgearbeitet(aktuelle Zeit: %d Minuten). \n",process->name,time);
     }
@@ -116,25 +116,36 @@ void prioJobFirst()
 void roundRobin()
 {
     long count = List_count(&Processlist);
+    long count2 = count;
     double mvz = 0;
     int temp = 0;
     int temp2 = 0;
+    int rounds= 0;
     while(!List_isEmpty(&Processlist))
     {
-        process = List_getFirst(&Processlist);
-        process->seconds--;
-        temp++;
-        printf("Es wurde 1 Minute an %c gearbeitet \n", process->name);
-        if(process->seconds <= 0)
+        bool fin = 0;
+        for(int i = 0; i< count2;i++)
         {
-              mvz += temp * (count-temp2);
-              temp2++;
-              temp = 0;
-              printf("Prozess %c wurde beendet \n", process->name);
+            process = List_getFirst(&Processlist);
+            process->seconds -= 1;
+            printf("Es wurde 1s an %c gearbeitet \n",process->name);
+            if(process->seconds <= 0)
+            {
+                fin = 1;
+                printf("Prozess %c wurde beendet \n",process->name);
+            }
+            else
+            {
+                List_append(&Processlist,process);
+            }
         }
-        else
+        rounds++;
+        if(fin == 1)
         {
-            List_append(&Processlist,process);
+            mvz += temp + rounds * count2;
+            temp += rounds *count2;
+            count2--;
+            rounds = 0;
         }
     }
     mvz = mvz / count;
@@ -154,6 +165,7 @@ void roundRobinPrio()
         priocomplete+= tempprio;
         tempprio--;
     }
+    printf("%d",priocomplete);
     int rounds= 0;
     while(!List_isEmpty(&Processlist))
     {
@@ -175,6 +187,7 @@ void roundRobinPrio()
             {
                 fin = 1;
                 printf("Prozess %c wurde beendet \n",process->name);
+                temp2 = process->prio;
             }
             else
             {
@@ -185,8 +198,8 @@ void roundRobinPrio()
         if(fin == 1)
         {
             mvz += temp +priocomplete * rounds;
-            temp += + priocomplete * rounds;
-            priocomplete -= process->prio;
+            temp += priocomplete * rounds;
+            priocomplete -= temp2;
             count2--;
             rounds = 0;
         }
