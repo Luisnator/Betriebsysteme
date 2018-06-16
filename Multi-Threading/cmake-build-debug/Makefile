@@ -48,10 +48,10 @@ RM = /home/luis/Downloads/clion-2018.1.5/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/Github/Betriebsysteme/Scheduling
+CMAKE_SOURCE_DIR = /home/luis/Github/Betriebsysteme/Multi-Threading
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug
+CMAKE_BINARY_DIR = /home/luis/Github/Betriebsysteme/Multi-Threading/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles /home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Github/Betriebsysteme/Multi-Threading/cmake-build-debug/CMakeFiles /home/luis/Github/Betriebsysteme/Multi-Threading/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/Github/Betriebsysteme/Multi-Threading/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Scheduling
+# Target rules for targets named Multi_Threading
 
 # Build rule for target.
-Scheduling: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Scheduling
-.PHONY : Scheduling
+Multi_Threading: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Multi_Threading
+.PHONY : Multi_Threading
 
 # fast build rule for target.
-Scheduling/fast:
-	$(MAKE) -f CMakeFiles/Scheduling.dir/build.make CMakeFiles/Scheduling.dir/build
-.PHONY : Scheduling/fast
+Multi_Threading/fast:
+	$(MAKE) -f CMakeFiles/Multi_Threading.dir/build.make CMakeFiles/Multi_Threading.dir/build
+.PHONY : Multi_Threading/fast
 
 main.o: main.c.o
 
@@ -129,7 +129,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/Scheduling.dir/build.make CMakeFiles/Scheduling.dir/main.c.o
+	$(MAKE) -f CMakeFiles/Multi_Threading.dir/build.make CMakeFiles/Multi_Threading.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -138,7 +138,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/Scheduling.dir/build.make CMakeFiles/Scheduling.dir/main.c.i
+	$(MAKE) -f CMakeFiles/Multi_Threading.dir/build.make CMakeFiles/Multi_Threading.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -147,7 +147,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/Scheduling.dir/build.make CMakeFiles/Scheduling.dir/main.c.s
+	$(MAKE) -f CMakeFiles/Multi_Threading.dir/build.make CMakeFiles/Multi_Threading.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Scheduling"
+	@echo "... Multi_Threading"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

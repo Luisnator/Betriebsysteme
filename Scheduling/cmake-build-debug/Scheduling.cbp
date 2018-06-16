@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug"/>
+				<Option working_dir="/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug"/>
+				<Option working_dir="/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug"/>
+				<Option working_dir="/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Scheduling">
-				<Option output="/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Scheduling" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug"/>
+				<Option output="/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Scheduling" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 Scheduling"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 Scheduling"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Scheduling/fast">
-				<Option output="/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Scheduling" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug"/>
+				<Option output="/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Scheduling" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,20 +71,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 Scheduling/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 Scheduling/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ubuntu/Betriebsysteme/Scheduling/lists.h">
+		<Unit filename="/home/luis/Github/Betriebsysteme/Scheduling/lists.h">
 			<Option target="Scheduling"/>
 		</Unit>
-		<Unit filename="/home/ubuntu/Betriebsysteme/Scheduling/main.c">
+		<Unit filename="/home/luis/Github/Betriebsysteme/Scheduling/main.c">
 			<Option target="Scheduling"/>
 		</Unit>
-		<Unit filename="/home/ubuntu/Betriebsysteme/Scheduling/CMakeLists.txt">
+		<Unit filename="/home/luis/Github/Betriebsysteme/Scheduling/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

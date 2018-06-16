@@ -1,3 +1,3 @@
-/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ubuntu/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles/Scheduling.dir
+/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/luis/Github/Betriebsysteme/Scheduling/cmake-build-debug/CMakeFiles/Scheduling.dir

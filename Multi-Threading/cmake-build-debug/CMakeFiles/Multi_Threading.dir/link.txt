@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Multi_Threading.dir/main.c.o  -o Multi_Threading -lpthread 
