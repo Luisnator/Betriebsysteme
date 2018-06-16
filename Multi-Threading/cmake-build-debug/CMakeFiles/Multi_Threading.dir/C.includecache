@@ -25,6 +25,8 @@ unistd.h
 -
 stdbool.h
 -
+time.h
+-
 
 /home/luis/Github/Betriebsysteme/Multi-Threading/miniz.c
 stdlib.h

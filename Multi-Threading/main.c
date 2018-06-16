@@ -7,10 +7,12 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <time.h>
 static Queue queue;
 char test;
 bool fin = 0;
-pthread_mutex_t mut;
+pthread_mutex_t mut = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t mut2 = PTHREAD_MUTEX_INITIALIZER;
 typedef struct job
 {
     char *path;
@@ -78,7 +80,6 @@ void* fillqueue(void *arg)
 
     if(d)
     {
-        printf("Got here");
         while((dir = readdir(d)) != NULL)
         {
             Job *data = (Job *) malloc(sizeof(Job));
@@ -87,15 +88,16 @@ void* fillqueue(void *arg)
             char *ext = get_filename_ext(&dir->d_name);
             unsigned char type = dir->d_type;
             char *fileWithoutExt = removeExt(dir->d_name);
-            if(ext != "compr" && type == 8)
+            if(!strcmp(ext,"compr") && type == 8)
             {
                 data->directory = path;
-                printf("%s\n",path);
                 data->filewithoutext = fileWithoutExt;
                 data->path = "./";
                 data->content = loadfile(path);
+                pthread_mutex_lock(&mut2);
                 queue_insert(queue,data);
-                printf("Juhu\n");
+                pthread_mutex_unlock(&mut2);
+                sleep(1);
             }
         }
     }
@@ -103,40 +105,62 @@ void* fillqueue(void *arg)
     {
         printf("Directory not valid") ;
     }
+    fin = 1;
 }
 void* compressData(void *arg)
 {
-    while(!queue_empty(queue) && fin == 0)
+
+    while(!queue_empty(queue) || fin == 0)
     {
         if(!queue_empty(queue))
         {
+            pthread_mutex_lock(&mut);
             Job *data = queue_head(queue);
             queue_delete(queue);
+            pthread_mutex_unlock(&mut);
             FILE *fp;
             char newFile[1000];
             strcpy(newFile,data->path);
             strcat(newFile,data->filewithoutext);
             strcat(newFile,".compr");
             fp = fopen(newFile,"w+");
-            printf("%s\n",data->path);
             printf("%s\n",newFile);
             Result *result = compress_string(data->content);
             fprintf(fp,result->data);
             free(result);
             fclose(fp);
+            sleep(3);
         }
     }
+
 }
-int main(int argc, char **argv) {
+int main(int argc, char *argv[]) {
+    time_t start_t,end_t;
+    double diff_t;
+    time(&start_t);
+    //create queue
     queue = queue_create();
     chdir(argv[0]);
-    char buf[100000];
-    printf("%s\n",getcwd(buf, sizeof(buf)));
+    char *bread = argv[2];
+    int count = atoi(bread);
+    //Thread fill Queue
     pthread_t handle1;
-    pthread_t handle2;
+    //Tread Queue
     int suc = pthread_create(&handle1,NULL,fillqueue,argv[1]);
+    //Thread compress
+    pthread_t handles[count];
+    int id[count];
+    for(int i = 0; i < count ; i++)
+    {
+        id[i] = pthread_create(&handles[i],NULL,compressData,&i);
+    }
+    for(int i = 0;i < count;i++)
+    {
+        pthread_join(handles[i],NULL);
+    }
     pthread_join(handle1,NULL);
-    int suc2 = pthread_create(&handle2,NULL,compressData,argv[1]);
-    pthread_join(handle2,NULL);
+    time(&end_t);
+    diff_t = difftime(end_t, start_t);
+    printf("Execution time: %f\n",diff_t);
     return 0;
 }
