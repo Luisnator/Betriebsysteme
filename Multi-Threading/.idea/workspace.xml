@@ -35,8 +35,8 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+            <state relative-caret-position="349">
+              <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -51,7 +51,11 @@
       </file>
       <file leaf-file-name="miniz.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniz.h">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="830">
+              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -74,8 +78,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="312" />
-    <option name="y" value="83" />
+    <option name="x" value="175" />
+    <option name="y" value="140" />
     <option name="width" value="1371" />
     <option name="height" value="786" />
   </component>
@@ -116,7 +120,7 @@
   </component>
   <component name="RunManager" selected="Application.Multi_Threading">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Multi_Threading" RUN_TARGET_NAME="Multi_Threading" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="Multi_Threading" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Multi_Threading" TARGET_NAME="Multi_Threading" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Multi_Threading" RUN_TARGET_NAME="Multi_Threading" />
+    <configuration name="Multi_Threading" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$USER_HOME$/test/" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Multi_Threading" TARGET_NAME="Multi_Threading" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Multi_Threading" RUN_TARGET_NAME="Multi_Threading" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.Multi_Threading" />
@@ -132,28 +136,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529155324824</updated>
-      <workItem from="1529155329397" duration="8800000" />
+      <workItem from="1529155329397" duration="17066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8800000" />
+    <option name="totallyTimeSpent" value="17066000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="312" y="83" width="1371" height="786" extended-state="0" />
+    <frame x="175" y="140" width="1371" height="786" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25528812" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.48067105" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.41940188" weight="0.32941177" />
       <window_info anchor="bottom" id="CMake" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.18088986" side_tool="true" visible="true" weight="0.34411764" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.24142961" side_tool="true" visible="true" weight="0.34411764" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.81911016" visible="true" weight="0.34411764" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7585704" visible="true" weight="0.34411764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" sideWeight="0.49928573" weight="0.32957748" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4996353" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -170,9 +174,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/miniz.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/queue.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -183,10 +184,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/miniz.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+        <state relative-caret-position="349">
+          <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

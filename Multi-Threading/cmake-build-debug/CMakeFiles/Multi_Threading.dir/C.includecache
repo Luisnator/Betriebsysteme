@@ -21,6 +21,10 @@ dirent.h
 -
 string.h
 -
+unistd.h
+-
+stdbool.h
+-
 
 /home/luis/Github/Betriebsysteme/Multi-Threading/miniz.c
 stdlib.h
