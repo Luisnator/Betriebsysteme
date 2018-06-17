@@ -76,7 +76,7 @@ void* fillqueue(void *arg)
     const char *test = (char *)arg;
     char buf[1000];
     chdir(test);
-    d = opendir(getcwd(buf, sizeof(buf)));
+    d = opendir("./");
 
     if(d)
     {
@@ -88,7 +88,7 @@ void* fillqueue(void *arg)
             char *ext = get_filename_ext(&dir->d_name);
             unsigned char type = dir->d_type;
             char *fileWithoutExt = removeExt(dir->d_name);
-            if(!strcmp(ext,"compr") && type == 8)
+            if(strcmp(ext,"compr") != 0 && type == 8)
             {
                 data->directory = path;
                 data->filewithoutext = fileWithoutExt;
@@ -109,7 +109,7 @@ void* fillqueue(void *arg)
 }
 void* compressData(void *arg)
 {
-
+    printf("%s, ",arg);
     while(!queue_empty(queue) || fin == 0)
     {
         if(!queue_empty(queue))
@@ -150,9 +150,11 @@ int main(int argc, char *argv[]) {
     //Thread compress
     pthread_t handles[count];
     int id[count];
+    char str[count][1000];
     for(int i = 0; i < count ; i++)
     {
-        id[i] = pthread_create(&handles[i],NULL,compressData,&i);
+        sprintf(str[i],"%d",i);
+        id[i] = pthread_create(&handles[i],NULL,compressData,&str[i]);
     }
     for(int i = 0;i < count;i++)
     {
