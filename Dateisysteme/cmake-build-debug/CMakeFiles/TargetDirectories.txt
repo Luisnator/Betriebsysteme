@@ -1,0 +1,3 @@
+/home/luis/Github/Betriebsysteme/Dateisysteme/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/luis/Github/Betriebsysteme/Dateisysteme/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/luis/Github/Betriebsysteme/Dateisysteme/cmake-build-debug/CMakeFiles/Dateisysteme.dir
