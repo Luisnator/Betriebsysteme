@@ -31,8 +31,8 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
-              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+            <state relative-caret-position="163">
+              <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -41,6 +41,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>per</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,8 +64,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="247" />
-    <option name="y" value="90" />
+    <option name="x" value="343" />
+    <option name="y" value="124" />
     <option name="width" value="1371" />
     <option name="height" value="786" />
   </component>
@@ -93,7 +98,7 @@
   </component>
   <component name="RunManager" selected="Application.Dateisysteme">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Dateisysteme" RUN_TARGET_NAME="Dateisysteme" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="Dateisysteme" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Dateisysteme" TARGET_NAME="Dateisysteme" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Dateisysteme" RUN_TARGET_NAME="Dateisysteme" />
+    <configuration name="Dateisysteme" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="alles.txt NEWFILE.COM" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Dateisysteme" TARGET_NAME="Dateisysteme" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Dateisysteme" RUN_TARGET_NAME="Dateisysteme" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.Dateisysteme" />
@@ -109,15 +114,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529261304315</updated>
-      <workItem from="1529261305580" duration="13586000" />
+      <workItem from="1529261305580" duration="18809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13586000" />
+    <option name="totallyTimeSpent" value="18809000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="246" y="626" width="1371" height="786" extended-state="0" />
+    <frame x="668" y="383" width="1371" height="786" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945295" />
@@ -157,8 +162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state relative-caret-position="163">
+          <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
