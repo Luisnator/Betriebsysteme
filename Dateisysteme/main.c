@@ -11,8 +11,7 @@ int main(int argc,char* argv[]) {
     const char *path = argv[1];
     const char *newpath = argv[2];
     int desc = open(path,O_RDWR | O_APPEND | O_CREAT,S_IRWXU);
-    printf("%d\n",desc);
-    //perror(errno);
+    perror(errno);
     int count = 0;
     off_t endoffile = lseek(desc,0,SEEK_END);
     int half = endoffile/2;
@@ -20,20 +19,21 @@ int main(int argc,char* argv[]) {
     char second[half+1];
     char complete[endoffile+1];
     lseek(desc,half,SEEK_SET);
+
     ssize_t size2 = read(desc,first, sizeof(first));
-    write(STDOUT_FILENO,first, strlen(first));
-    printf("\n");
+    write(STDOUT_FILENO,first, strlen(first)-3);
     lseek(desc,0,SEEK_SET);
-    if(half / 2 == 0)
+    if(half % 2 == 0)
     {
-        ssize_t size3 = read(desc,second, sizeof(second)-1);
+        ssize_t size3 = read(desc,second, sizeof(second)- sizeof(char));
         write(STDOUT_FILENO,second, strlen(second));
     }
     else
     {
-        ssize_t size3 = read(desc,second, sizeof(second)-1);
-        write(STDOUT_FILENO,second, strlen(second));
+        ssize_t size3 = read(desc,second, sizeof(second) - sizeof(char));
+        write(STDOUT_FILENO,second, strlen(second)- sizeof(char)- 1);
     }
+
     lseek(desc,0,SEEK_SET);
     read(desc,complete, sizeof(complete)-1);
     printf("%s",complete);
@@ -114,10 +114,6 @@ int main(int argc,char* argv[]) {
     int status2 = close(desc2);
     int status = close(desc);
 
-
-    //const char * test = "Hall";
-  //  write(STDOUT_FILENO,test,strlen(test));
-  //  printf("%d\n",status);
 
     return 0;
 }
