@@ -1,0 +1,11 @@
+#!/bin/bash
+
+hour=$(date +%H)
+if [ "$hour" -gt 0 ] && [ "$hour" -le 12 ]; then
+	echo "Guten Morgen $USER"
+elif [ "$hour" -gt 12 ] && [ "$hour" -le 17 ]; then
+	echo "Guten Tag $USER"
+else
+	echo "Guten Abend $USER"
+fi
+
